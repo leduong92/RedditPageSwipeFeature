@@ -12,7 +12,6 @@ protocol MenuControllerDelegate {
     func didTapMenuItem(indexPath: IndexPath)
 }
 
-
 class MenuController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     
     fileprivate let cellId = "cellId"

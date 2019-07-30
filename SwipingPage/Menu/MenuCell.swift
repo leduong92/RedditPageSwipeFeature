@@ -18,6 +18,14 @@ class MenuCell: UICollectionViewCell {
         return l
     }()
     
+    override var isSelected: Bool {
+        didSet {
+            label.textColor = isSelected ? .black : .lightGray
+        }
+    }
+    
+    
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         

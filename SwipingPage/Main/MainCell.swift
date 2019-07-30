@@ -9,11 +9,15 @@
 import UIKit
 
 class MainCell: UICollectionViewCell {
+    
+    let newsItemsController = NewsItemsController()
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        backgroundColor = .yellow
-        
+        let newsItemsView = newsItemsController.view!
+        addSubview(newsItemsView)
+        newsItemsView.fillSuperview()
     }
     
     required init?(coder aDecoder: NSCoder) {

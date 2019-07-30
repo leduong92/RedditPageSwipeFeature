@@ -52,6 +52,7 @@ class SwipingController: UICollectionViewController, UICollectionViewDelegateFlo
         
         setupLayout()
         collectionView.register(MainCell.self, forCellWithReuseIdentifier: cellID)
+        collectionView.isPagingEnabled = true
     }
     
     fileprivate func setupLayout() {
